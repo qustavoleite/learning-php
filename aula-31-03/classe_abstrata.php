@@ -1,4 +1,9 @@
 <?php 
+//sao classes, possuem atributos e metodos, não podem ser instanciadas (new), so pode ser herdada 
+
+//define um modelo base para aoutras classes
+//pode conter metodos concreto e abstratos
+//obrigatoriamente deve ser herdade por outra classe
 
 abstract class Pessoa {
     public $nome;
@@ -6,7 +11,7 @@ abstract class Pessoa {
     public $email;
 
     public function fazerLogin() {  
-        return "A pessoa {$this->nome} esta fezzendo login\n";
+        return "A pessoa {$this->nome} esta fezendo login\n";
     }
 }
 
@@ -14,7 +19,7 @@ class Aluno extends Pessoa {
     public $ra;
 
     public function verBoleto() {
-        return "Oo {$this->nome} esta vendo um boleto\n";
+        return "O {$this->nome} esta vendo um boleto\n";
     }
 }
 

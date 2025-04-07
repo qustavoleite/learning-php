@@ -1,4 +1,5 @@
 <?php 
+//sao funções que eu tenho dentro de uma classe abstrata, mas as funções nao estao immplementadas, apenas declaradas. a classe que herdar sao obrigadas a implementar as funções (ações)
 
 abstract class Animal {
     abstract public function deslocar();
@@ -10,7 +11,7 @@ class Papagaio extends Animal {
     }
 }
 
-class Age extends Animal {
+class Peixe extends Animal {
      public function deslocar(){
         return "O peixe esta nadando \n";
     }

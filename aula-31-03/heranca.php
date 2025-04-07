@@ -1,12 +1,17 @@
 <?php 
 
+//permite que uma classe (classe filha) herde atributos e métodos de outra classe (classe pai)
+//a classe filha herda todos os métodos e atributos PUBLICOS e PROTEGIDOS da classe pai
+//a classe filha nao herda atributos/metodos privados da classe pai
+//podemos adcionar novos metodos ao modifica métodos existentes.
+
 class Pessoa {
     public $nome;
     public $CPF;
     public $email;
 
     public function fazerLogin() {
-        return "A pessoa {$this->nome} esta fazedno login\n";
+        return "A pessoa {$this->nome} esta fazendo login\n";
     }
 }
 
@@ -15,14 +20,13 @@ class Aluno extends Pessoa {
     public $ra;
 
     public function verBoleto() {
-        return "Oo {$this->nome} esta vendo um boleto \n";
+        return "O {$this->nome} esta vendo um boleto \n";
     }
 }
 
 class Professor extends Pessoa {
      
 }
-
 
 $obj1 =  new Aluno();
 $obj1->nome = "bob";

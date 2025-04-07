@@ -1,5 +1,7 @@
 <?php 
 
+//todos os metodos declarados devem ser implementados, garante que as classes tenham metodos especificos, permite que uma classe implemente multiplas interfaces
+
 interface Veiculo {
     public function ligar();
 }
